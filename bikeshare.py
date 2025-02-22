@@ -59,7 +59,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    # load data file into a dataframe
+    # Load the dataset for the selected city into a Pandas DataFrame
     df = pd.read_csv(CITY_DATA[city])
 
     # convert the Start Time column to datetime
@@ -87,7 +87,16 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """
+    Calculates and displays statistics about the most common times of travel.
+
+    Args:
+        df (DataFrame): The bikeshare data filtered by city, month, and day.
+
+    Returns:
+        None
+    """
+    # Extract the most common month, day, and hour of travel
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -101,6 +110,7 @@ def time_stats(df):
     print(f"The most common day is: {most_common_day}")
 
     # Display the most common start hour
+    # Extract the hour from the 'Start Time' column to analyze peak travel times
     df['hour'] = df['Start Time'].dt.hour  # Remove parentheses after dt.hour
     most_common_hour = df['hour'].mode()[0]
     print(f"The most common hour is: {most_common_hour}")
