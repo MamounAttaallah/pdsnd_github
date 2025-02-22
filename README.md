@@ -1,17 +1,30 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# 🚴‍♂️ Bikeshare Data Analysis
 
-### Date created
-Include the date you created this project and README file.
+This project explores data from bikeshare systems in major U.S. cities using Python and Pandas.
 
-### Project Title
-Replace the Project Title
+## 📌 Features
+- Allows users to filter data by city, month, or day of the week.
+- Displays statistics on popular travel times, stations, and trip durations.
+- Provides insights into user demographics (if available).
+- Offers an option to view raw data in increments of 5 rows.
 
-### Description
-Describe what your project is about and what it does
+## 🛠 Setup Instructions
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/pdsnd_github.git
+   cd pdsnd_github
+2. Install dependencies:
+   ```bash
+   pip install pandas numpy
+3. Run the script:
+   ```bash
+   python bikeshare.py
 
-### Files used
-Include the files used
+## 🔍 Filtering Data
+- Select a city: Chicago, New York City, or Washington
+- Choose a month: January - June or All
+- Pick a day of the week: Monday - Sunday or All
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+## 📜 License
 
+This project is part of the Udacity Data Science Nanodegree.
